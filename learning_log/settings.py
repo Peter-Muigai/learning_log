@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#4+6c9jrl=1mu!hq(u!+!9@ik2^fxh-_@%2=&=4928l&0y(rvj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -135,6 +135,5 @@ LOGOUT_REDIRECT_URL = 'learning_logs:index'
 # My settings
 LOGIN_URL = 'users:login'
 
-# Heroku settings.
-import django_heroku
-django_heroku.settings(locals())
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
