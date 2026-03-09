@@ -4,7 +4,7 @@ A Django-based web application that helps users **track and organize their learn
 
 ## Live Demo
 
-You can access the deployed app here: [https://learning-log.onrender.com](https://learning-log.onrender.com)
+You can access the deployed app here: [https://learning-log-1-qa0f.onrender.com/]
 
 ---
 
