@@ -6,9 +6,8 @@ from .forms import TopicForm, EntryForm
 
 # Create your views here.
 def index(request):
-    """Redirect home page to topics."""
-    return redirect('learning_logs:topics')
-
+    """The home page for learning_log."""
+    return render(request, 'learning_logs/index.html')
 
 @ login_required
 def topics(request):
